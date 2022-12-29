@@ -1,13 +1,50 @@
 import extractWords from './extract-words';
 
-test('Extract Words 1', () => {
-  expect(extractWords('Dwa Słowa')).toStrictEqual(['Dwa', 'Słowa']);
+describe('Extract Words Function', () => {
+  const extracted = extractWords('Dwa? Różne! #Słowa');
+
+  it('Extracts words', () => {
+    expect(extracted.words).toStrictEqual(['Dwa?', 'Różne!', '#Słowa']);
+  });
+
+  it('Extracts words without signs', () => {
+    expect(extracted.clearWords).toStrictEqual(['Dwa', 'Różne', 'Słowa']);
+  });
 });
 
-test('Extract Words 2', () => {
-  expect(extractWords('To Trzy Słowa')).toStrictEqual(['To', 'Trzy', 'Słowa']);
-});
 
-test('Extract Words 3', () => {
-  expect(extractWords('To są Cztery Słowa')).toStrictEqual(['To', 'są', 'Cztery', 'Słowa']);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
