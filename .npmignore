@@ -1,5 +1,13 @@
+.eslintignore
+.eslintrc
+.gitignore
+.husky
+.prettierrc
+index.ts
+jestconfig.json
+node_modules
 src
 tsconfig.json
 tslint.json
-.prettierrc
-index.ts
+yarn-error.log
+.lintstagedrc.js
