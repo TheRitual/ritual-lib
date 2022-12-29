@@ -5,7 +5,8 @@ const extractWords = (text: string): { words: Array<string>; clearWords: Array<s
   const regex = XRegExp('[^\\s\\p{Latin}]+', 'g');
   const clearWords = text.split(' ').map((word) => XRegExp.replace(word, regex, ''));
   return {
-    words,     clearWords,
+    words,
+    clearWords,
   };
 };
 
