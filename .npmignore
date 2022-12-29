@@ -2,12 +2,13 @@
 .eslintrc
 .gitignore
 .husky
+.lintstagedrc.js
 .prettierrc
 index.ts
+jest.config.js
 jestconfig.json
 node_modules
 src
 tsconfig.json
 tslint.json
 yarn-error.log
-.lintstagedrc.js
